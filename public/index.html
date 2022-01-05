@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web site created using create-snowpack-app"
+    />
+    <link rel="stylesheet" type="text/css" href="/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Snowpack App</title>
+  </head>
+  <body>
+    <script type="module" src="/dist/index.js"></script>
+    <script type="module" src="/dist/Api.js"></script>
+    <main>
+      <div class="game-quiz-container">
+        <div class="game-details-container">
+          <h1>Player: <span id="name"></span></h1>
+          <h1>Question : <span id="question-number"></span> / 7</h1>
+          <div id="quiz-time-left"></div>
+          <div id="quiz-timer"></div>
+        </div>
+        
+        <div class="game-question-container">
+          <h1 id="display-question"></h1>
+        </div>
+        <div class="bestScores"></div>
+        <div class="game-options-container">
+          <div id="divContainer" class="container"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
